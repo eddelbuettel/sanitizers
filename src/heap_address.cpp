@@ -4,7 +4,7 @@
 
 extern "C" {
 
-    /* cf https://code.google.com/p/address-sanitizer/wiki/ExampleHeapOutOfBounds */
+    // https://code.google.com/p/address-sanitizer/wiki/ExampleHeapOutOfBounds 
     SEXP heapAddressSanitize(SEXP xs) {
         int *array = new int[100];
         int x, y;

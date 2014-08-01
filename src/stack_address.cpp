@@ -4,7 +4,7 @@
 
 extern "C" {
 
-    /* cf https://code.google.com/p/address-sanitizer/wiki/ExampleStackOutOfBounds */
+    // cf https://code.google.com/p/address-sanitizer/wiki/ExampleStackOutOfBounds 
     SEXP stackAddressSanitize(SEXP xs) {
         int x, y;
         int stack_array[100];
@@ -23,4 +23,3 @@ extern "C" {
     }
  
 }
-

@@ -6,3 +6,5 @@ stackAddressSanitize <- function(x=10) {
 heapAddressSanitize <- function(x=10) {
     .Call("heapAddressSanitize", x, PACKAGE="sanitizers")
 }
+
+
