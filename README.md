@@ -20,6 +20,9 @@ This R package then provides a means of testing the compiler setup as the
 known code failures provides in the sample code here should be detected
 correctly, whereas a default build of R will let the package pass.
 
+The code samples are based on the examples from the [Address Sanitizer
+Wiki](https://code.google.com/p/address-sanitizer/wiki/AddressSanitizer).
+
 ## Author
 
 Dirk Eddelbuettel
