@@ -2,6 +2,9 @@
 
 	* Description: Finalized release 0.1.0
 
+	* tests/testStackAddressSanitize.R: Split tests into individual files
+	* tests/testHeapAddressSanitize.R: Idem
+
 2014-08-01  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Add reference to Address Sanitizer wiki
