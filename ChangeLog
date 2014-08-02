@@ -1,6 +1,16 @@
+2014-08-02  Dirk Eddelbuettel  <edd@debian.org>
+
+	* Description: Finalized release 0.1.0
+
+2014-08-01  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Add reference to Address Sanitizer wiki
+	* DESCRIPTION: Idem
+	* man/sanitizers-package.Rd: Idem
+
 2014-07-30  Dirk Eddelbuettel  <edd@debian.org>
 
-	* DESCRIPTION: First upload as version 0.1.0
+	* Initial git commit as version 0.1.0
 
 2014-06-24  Dirk Eddelbuettel  <edd@debian.org>
 
