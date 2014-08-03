@@ -6,18 +6,19 @@
 \alias{sanitizers}
 \docType{package}
 \title{
-  Example code to trigger SAN and UBSAN reports
+  Example code to trigger ASAN and UBSAN reports
 }
 \description{
   This package provides example for the Address Sanitize and Undefined
   Behaviour Sanitize features provided by recent gcc and clang versions.
 }
 \details{
- Recent gcc and clang compiler versions provide functionality to
+ Recent gcc and clang compiler versions provide functionality to test for
  memory violations and other undefined behaviour; this is often referred to as
- \dQuote{Address Sanitizer} (or SAN) and \dQuote{Undefined Behaviour Sanitizer} 
+ \dQuote{Address Sanitizer} (or ASAN) and \dQuote{Undefined Behaviour Sanitizer} 
  (UBSAN). The
- \href{http://cran.r-project.org/doc/manuals/r-release/R-exts.html}{Writing R Extension manual} describes this in some detail in Section 4 (titled \dQuote{Debugging}).
+ \href{http://cran.r-project.org/doc/manuals/r-release/R-exts.html}{Writing R Extension manual} 
+  describes this in some detail in Section 4.3 (titled \dQuote{Checking Memory Access}).
 
   This feature has to be enabled in the corresponding binary, eg in R, which
   is somewhat involved as it also required a current compiler toolchain which 
