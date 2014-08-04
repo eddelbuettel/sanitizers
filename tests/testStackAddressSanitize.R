@@ -1,3 +1,3 @@
 
 library(sanitizers)
-stackAddressSanitize(42)
+stackAddressSanitize(2)

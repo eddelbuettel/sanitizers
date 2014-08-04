@@ -1,3 +1,3 @@
 
 library(sanitizers)
-heapAddressSanitize(42)
+heapAddressSanitize(2)

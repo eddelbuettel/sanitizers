@@ -1,3 +1,9 @@
+2014-08-03  Dirk Eddelbuettel  <edd@debian.org>
+
+	* tests/testStackAddressSanitize.R: Tests fail more reliably when
+	integer argument is smaller, hence adjusted
+	* tests/testHeapAddressSanitize.R: Idem
+
 2014-08-02  Dirk Eddelbuettel  <edd@debian.org>
 
 	* Description: Finalized release 0.1.0
