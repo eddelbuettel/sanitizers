@@ -3,7 +3,8 @@
 	* src/int_overflow.cpp: New overflow example for undefined behavior
 	sanitizer with a big Thanks! to Greg Jefferis
 	* R/sanitizer.R (intOverflowSanitize): Caller for new sanitizer test
-	* tests/testIntOverflowSanitize.R: Test to tickle new sanitizer 
+	* tests/testIntOverflowSanitize.R: Test to tickle new sanitizer
+	* man/sanitizers-package.Rd: Add alias as well
 
 2014-08-03  Dirk Eddelbuettel  <edd@debian.org>
 
