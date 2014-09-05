@@ -1,3 +1,10 @@
+2014-09-04  Dirk Eddelbuettel  <edd@debian.org>
+
+	* src/int_overflow.cpp: New overflow example for undefined behavior
+	sanitizer with a big Thanks! to Greg Jefferis
+	* R/sanitizer.R (intOverflowSanitize): Caller for new sanitizer test
+	* tests/testIntOverflowSanitize.R: Test to tickle new sanitizer 
+
 2014-08-03  Dirk Eddelbuettel  <edd@debian.org>
 
 	* tests/testStackAddressSanitize.R: Tests fail more reliably when
