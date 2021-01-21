@@ -1,6 +1,7 @@
 ## sanitizier: Code to trigger ASAN and UBSAN reports
 
 [![Build Status](https://travis-ci.org/eddelbuettel/sanitizers.png)](https://travis-ci.org/eddelbuettel/sanitizers)
+[![CI](https://github.com/eddelbuettel/sanitizers/workflows/ci/badge.svg)](https://github.com/eddelbuettel/sanitizers/actions?query=workflow%3Aci)
 
 Recent gcc and clang compiler versions provide functionality to test for
 memory violations and other undefined behaviour; this is often referred to as
