@@ -27,3 +27,5 @@ Description: Recent gcc and clang compiler versions provide functionality to
  The code samples are based on the examples from the Address Sanitizer
  Wiki at https://code.google.com/p/address-sanitizer/wiki/AddressSanitizer.
 License: GPL (>= 2)
+URL: https://github.com/eddelbuettel/samitizers, https://dirk.eddelbuettel.com/code/sanitizers.html
+BugReports: https://github.com/eddelbuettel/sanitizers/issues
