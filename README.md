@@ -1,6 +1,11 @@
-## sanitizier: Code to trigger ASAN and UBSAN reports
+## sanitizer: Code to trigger ASAN and UBSAN reports
 
 [![CI](https://github.com/eddelbuettel/sanitizers/workflows/ci/badge.svg)](https://github.com/eddelbuettel/sanitizers/actions?query=workflow%3Aci)
+[![License](https://eddelbuettel.github.io/badges/GPL2+.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+[![CRAN](https://www.r-pkg.org/badges/version/sanitizers)](https://cran.r-project.org/package=sanitizers)
+[![Dependencies](https://tinyverse.netlify.com/badge/sanitizers)](https://cran.r-project.org/package=sanitizers)
+[![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/sanitizers)](https://github.com/eddelbuettel/sanitizers)
+
 
 Recent gcc and clang compiler versions provide functionality to test for
 memory violations and other undefined behaviour; this is often referred to as
