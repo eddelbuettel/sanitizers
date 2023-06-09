@@ -1,5 +1,9 @@
 2023-06-09  Dirk Eddelbuettel  <edd@debian.org>
 
+	* src/init.c: Add (auto-generated) registration code
+	* NAMESPACE: Use .registration=TRUE
+	* sanitizers.R: Use registered symbols
+
 	* README.md: Update README text
 	* DESCRIPTION: Update DESCRIPTION text
 

@@ -1,13 +1,13 @@
 
 stackAddressSanitize <- function(x=10) {
-    .Call("stackAddressSanitize", x, PACKAGE="sanitizers")
+    .Call(c_stackAddressSanitize, x)
 }
 
 heapAddressSanitize <- function(x=10) {
-    .Call("heapAddressSanitize", x, PACKAGE="sanitizers")
+    .Call(c_heapAddressSanitize, x)
 }
 
 intOverflowSanitize <- function(x=31) {
-    .Call("intOverflow", x, PACKAGE="sanitizers")
+    .Call(c_intOverflow, x)
 }
 

@@ -1,2 +1,5 @@
-useDynLib("sanitizers")
-exportPattern("^[[:alpha:]]+")
+useDynLib(sanitizers, .registration = TRUE, .fixes = "c_")
+
+export(stackAddressSanitize,
+       heapAddressSanitize,
+       intOverflowSanitize)
