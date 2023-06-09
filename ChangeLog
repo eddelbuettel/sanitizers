@@ -1,3 +1,8 @@
+2023-06-09  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Update README text
+	* DESCRIPTION: Update DESCRIPTION text
+
 2023-06-08  Dirk Eddelbuettel  <edd@debian.org>
 
 	* README.md: Correct typo, add badges
