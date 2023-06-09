@@ -6,6 +6,9 @@
 
 	* README.md: Update README text
 	* DESCRIPTION: Update DESCRIPTION text
+	* man/sanitizer-packages.Rd: Replaced multiple sections with calls to
+	corresponding function deriving from DESCRIPTION file instead
+	* cleanup: Added
 
 2023-06-08  Dirk Eddelbuettel  <edd@debian.org>
 
