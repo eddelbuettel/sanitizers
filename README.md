@@ -34,7 +34,9 @@ I also maintain.  Launching it in, say, a checkout of this repo as
 docker run --rm -ti -v $PWD:/work -w /work rocker/r-devel-san bash
 ```
 
-launches a `bash` in the repo. We can then install this package _using the sanitizer build_ (important: `RD`, not `R`) via
+launches a `bash` shell in the current directory which should contain the checked-out repo. We can
+then install this package _using the sanitizer build_ (important: using `RD` aka r-devel, not `R`
+the standard package version) via
 
 ```sh
 RD CMD INSTALL .

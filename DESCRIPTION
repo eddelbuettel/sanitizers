@@ -1,8 +1,8 @@
 Package: sanitizers
 Type: Package
 Title: C/C++ Source Code to Trigger Address and Undefined Behaviour Sanitizers
-Version: 0.1.0.1
-Date: 2014-09-04
+Version: 0.1.1
+Date: 2023-06-11
 Author: Dirk Eddelbuettel
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: Recent gcc and clang compiler versions provide functionality to

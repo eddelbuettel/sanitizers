@@ -1,5 +1,7 @@
 2023-06-11  Dirk Eddelbuettel  <edd@debian.org>
 
+	* DESCRIPTION (Version, Date): Release 0.1.1
+
 	* README.md: Expand with example using Rocker r-devel-san
 
 2023-06-09  Dirk Eddelbuettel  <edd@debian.org>
