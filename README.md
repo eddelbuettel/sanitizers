@@ -6,6 +6,7 @@
 [![Dependencies](https://tinyverse.netlify.com/badge/sanitizers)](https://cran.r-project.org/package=sanitizers)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/sanitizers)](https://github.com/eddelbuettel/sanitizers)
 
+### Motivation
 
 The gcc and clang compilers provide functionality to test for memory violations and other undefined behaviour; this is often
 referred to as "Address Sanitizer" (or ASAN) and "Undefined Behaviour Sanitizer" (UBSAN).  The [Writing R Extension
@@ -24,11 +25,51 @@ should be detected correctly, whereas a default build of R will let the package 
 
 The code samples are based on the examples from the [Address Sanitizer Wiki](https://github.com/google/sanitizers/wiki).
 
-## Author
+### Example
+
+We can use the [Rocker Project](https://rocker-project.org/) container [r-devel-san](https://hub.docker.com/r/rocker/r-devel-san)
+I also maintain.  Launching it in, say, a checkout of this repo as 
+
+```sh
+docker run --rm -ti -v $PWD:/work -w /work rocker/r-devel-san bash
+```
+
+launches a `bash` in the repo. We can then install this package _using the sanitizer build_ (important: `RD`, not `R`) via
+
+```sh
+RD CMD INSTALL .
+```
+
+When we then launch `RD` we can tickle the sanitizer vioaliations by calling the respective functions:
+
+```r
+> sanitizers::stackAddressSanitize()
+stack_address.cpp:16:32: runtime error: index 110 out of bounds for type 'int [100]'
+stack_address.cpp:16:11: runtime error: load of address 0x7ffd22bcb7b8 with insufficient space for an object of type 'int'
+0x7ffd22bcb7b8: note: pointer points here
+ fd 7f 00 00  38 f3 bd d3 0f 7f 00 00  40 b8 bc 22 fd 7f 00 00  09 69 b7 d3 0f 7f 00 00  20 d4 4f da
+              ^ 
+[1] -742526152
+> sanitizers::heapAddressSanitize()
+heap_address.cpp:16:11: runtime error: load of address 0x558eda5d9a58 with insufficient space for an object of type 'int'
+0x558eda5d9a58: note: pointer points here
+ 8e 55 00 00  40 d8 5d da 8e 55 00 00  80 9a 5d da 8e 55 00 00  78 fd c7 d7 8e 55 00 00  20 fe c7 d7
+              ^ 
+[1] -631384000
+> sanitizers::intOverflowSanitize()
+int_overflow.cpp:17:11: runtime error: signed integer overflow: -2147483648 - 1 cannot be represented in type 'int'
+[1] 2147483647
+> 
+```
+
+This demonstrates that the `r-devel-san` container is correctly instrumented, and that we launched
+the appropriate R(-devel) instance triggering the true positives manifested in this package.
+
+### Author
 
 Dirk Eddelbuettel
 
-## License
+### License
 
 GPL (>= 2)
 

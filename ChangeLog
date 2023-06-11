@@ -1,3 +1,7 @@
+2023-06-11  Dirk Eddelbuettel  <edd@debian.org>
+
+	* README.md: Expand with example using Rocker r-devel-san
+
 2023-06-09  Dirk Eddelbuettel  <edd@debian.org>
 
 	* src/init.c: Add (auto-generated) registration code
