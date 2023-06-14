@@ -5,7 +5,7 @@
 
 \section{Changes in version 0.1.1 (2023-06-11)}{
   \itemize{
-    \item Added integer overflow example kindly contributed by Greg Jeffries
+    \item Added integer overflow example kindly contributed by Greg Jefferis
     \item Added continuous integration and badges
     \item Updated package to use symbol registration for compiled code
     \item Updated and edited DESCRIPTION, README and help pages for current
