@@ -3,6 +3,7 @@
 [![CI](https://github.com/eddelbuettel/sanitizers/workflows/ci/badge.svg)](https://github.com/eddelbuettel/sanitizers/actions?query=workflow%3Aci)
 [![License](https://eddelbuettel.github.io/badges/GPL2+.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
 [![CRAN](https://www.r-pkg.org/badges/version/sanitizers)](https://cran.r-project.org/package=sanitizers)
+[![r-universe](https://eddelbuettel.r-universe.dev/badges/sanitizers)](https://eddelbuettel.r-universe.dev/sanitizers)
 [![Dependencies](https://tinyverse.netlify.com/badge/sanitizers)](https://cran.r-project.org/package=sanitizers)
 [![Last Commit](https://img.shields.io/github/last-commit/eddelbuettel/sanitizers)](https://github.com/eddelbuettel/sanitizers)
 
