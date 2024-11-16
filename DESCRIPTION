@@ -3,8 +3,8 @@ Type: Package
 Title: C/C++ Source Code to Trigger Address and Undefined Behaviour Sanitizers
 Version: 0.1.1
 Date: 2023-06-11
-Author: Dirk Eddelbuettel
-Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Authors@R: person("Dirk", "Eddelbuettel", role = c("aut", "cre"), email = "edd@debian.org",
+                  comment = c(ORCID = "0000-0001-6419-907X"))
 Description: Recent gcc and clang compiler versions provide functionality to
  test for memory violations and other undefined behaviour; this is often 
  referred to as "Address Sanitizer" (or 'ASAN') and "Undefined Behaviour 
